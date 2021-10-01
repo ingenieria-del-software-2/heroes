@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "heroes"
+version = "0.1.0"
+description = "Create And List Heroes REST"
+authors = ["Paulo Cesar Cuneo <cuneo.paulo.cesar@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.1"
+sqlmodel = "^0.0.4"
+uvicorn = "^0.15.0"
+psycopg2 = "^2.9.1"
+httpx = "^0.19.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
