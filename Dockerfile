@@ -11,4 +11,4 @@ RUN poetry install --no-interaction
 
 COPY . .
 
-ENTRYPOINT poerty run uvicorn main:app --port $PORT --host 0.0.0.0
+ENTRYPOINT poetry run alembic upgrade head && poetry uvicorn main:app --port $PORT --host 0.0.0.0
