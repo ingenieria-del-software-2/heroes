@@ -4,7 +4,7 @@ import os
 
 
 class Hero(SQLModel, table=True):
-    id: Optional[int] = Field(default=None, primary_key=True)
+    id: Optional[int] = Field(default=None, primary_key=True, nullable=False)
     author: str
     name: str = Field(sa_column_kwargs={"unique": True})
     secret_name: str
